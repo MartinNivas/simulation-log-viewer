@@ -1,0 +1,330 @@
+
+{
+    "data":[
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-05T04:28:14Z",
+                "endTime": "2020-07-05T04:48:14Z",    
+                "scenarioId": "S0001", 
+                "carBuild": "CB0001",
+                "result": {       
+                    "numberOfStops": 8,
+                    "hasCollision": true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0001",
+                "maxNumberOfStops": 10,
+                "maxRunningTime": "05:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-05T05:28:14Z",
+                "endTime": "2020-07-05T05:38:14Z",    
+                "scenarioId": "S0002", 
+                "carBuild": "CB0002",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision": false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0002",
+                "maxNumberOfStops": 3,
+                "maxRunningTime": "05:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-05T04:08:14Z",
+                "endTime": "2020-07-05T04:28:14Z",    
+                "scenarioId": "S0003", 
+                "carBuild": "CB0001",
+                "result": {       
+                    "numberOfStops": 8,
+                    "hasCollision": true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0003",
+                "maxNumberOfStops": 10,
+                "maxRunningTime": "05:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-05T04:00:14Z",
+                "endTime": "2020-07-05T04:30:14Z",    
+                "scenarioId": "S0004", 
+                "carBuild": "CB0002",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision":  false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0004",
+                "maxNumberOfStops": 3,
+                "maxRunningTime": "05:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0005", 
+                "carBuild": "CB0004",
+                "result": {       
+                    "numberOfStops": 2,
+                    "hasCollision":  false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0005",
+                "maxNumberOfStops": 2,
+                "maxRunningTime": "02:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:55:14Z",    
+                "scenarioId": "S0006", 
+                "carBuild": "CB0003",
+                "result": {       
+                    "numberOfStops": 8,
+                    "hasCollision": false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0006",
+                "maxNumberOfStops": 7,
+                "maxRunningTime": "07:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0007", 
+                "carBuild": "CB0005",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision": false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0007",
+                "maxNumberOfStops": 8,
+                "maxRunningTime": "8:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0008", 
+                "carBuild": "CB0005",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision": true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0008",
+                "maxNumberOfStops": 10,
+                "maxRunningTime": "11:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0009", 
+                "carBuild": "CB0005",
+                "result": {       
+                    "numberOfStops": 24,
+                    "hasCollision":  true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0009",
+                "maxNumberOfStops": 14,
+                "maxRunningTime": "14:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0010", 
+                "carBuild": "CB0006",
+                "result": {       
+                    "numberOfStops": 1,
+                    "hasCollision":  false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0010",
+                "maxNumberOfStops": 1,
+                "maxRunningTime": "01:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0011", 
+                "carBuild": "CB0006",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision":  true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0011",
+                "maxNumberOfStops": 7,
+                "maxRunningTime": "07:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0012", 
+                "carBuild": "CB0007",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision":  false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0012",
+                "maxNumberOfStops": 9,
+                "maxRunningTime": "09:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0013", 
+                "carBuild": "CB0007",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision":  true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0013",
+                "maxNumberOfStops": 3,
+                "maxRunningTime": "03:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0014", 
+                "carBuild": "CB0008",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision":  false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0014",
+                "maxNumberOfStops": 4,
+                "maxRunningTime": "04:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0015", 
+                "carBuild": "CB0009",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision":  true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0015",
+                "maxNumberOfStops": 6,
+                "maxRunningTime": "06:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0016", 
+                "carBuild": "CB0009",
+                "result": {       
+                    "numberOfStops": 4,
+                    "hasCollision":  false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0016",
+                "maxNumberOfStops": 8,
+                "maxRunningTime": "08:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T04:10:14Z",
+                "endTime": "2020-07-06T04:20:14Z",    
+                "scenarioId": "S0017", 
+                "carBuild": "CB0008",
+                "result": {       
+                    "numberOfStops": 8,
+                    "hasCollision": false
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0017",
+                "maxNumberOfStops": 5,
+                "maxRunningTime": "05:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T03:20:14Z",
+                "endTime": "2020-07-06T03:40:14Z",    
+                "scenarioId": "S0018", 
+                "carBuild": "CB0010",
+                "result": {       
+                    "numberOfStops": 8,
+                    "hasCollision": true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0018",
+                "maxNumberOfStops": 9,
+                "maxRunningTime": "09:00"
+            }
+        },
+        { 
+            "simulationRuns": { 
+                "startTime": "2020-07-06T03:10:14Z",
+                "endTime": "2020-07-06T03:20:14Z",    
+                "scenarioId": "S0019", 
+                "carBuild": "CB0010",
+                "result": {       
+                    "numberOfStops": 7,
+                    "hasCollision":  true
+                }   
+            },   
+            "scenarios": {     
+                "scenarioId": "S0019",
+                "maxNumberOfStops": 6,
+                "maxRunningTime": "06:00"
+            }
+        }
+
+    ]
+}
+    

@@ -1,0 +1,25 @@
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.nu-mb {
+  margin-top: 10px;
+}
+
+.nu-ac {
+  margin: 20px;
+}
+  
+body .p-progressbar .p-progressbar-value {
+  background: #FF0000 !important;
+}
