@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import './Simulator.module.css';
-import {SimulatorService} from '../../service/SimulatorService';
+import {SimulatorService} from '../../services/SimulatorService';
 import {TabView,TabPanel} from 'primereact/tabview';
 import TableView from '../TableView/TableView.lazy';
 import SearchSection from '../SearchSection/SearchSection.lazy'
