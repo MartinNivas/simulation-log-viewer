@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { AutoComplete } from 'primereact/autocomplete';
 import {ProgressBar} from 'primereact/progressbar';
 
-const SearchSection = (props) => {
+const SearchZone = (props) => {
     const [logData] = useState(props.logData);
     
     const [filteredScenarioId, setFilteredScenarioId] = useState([]);
@@ -222,4 +222,4 @@ const searchTableData = () => {
     );
 }
 
-export default SearchSection;
+export default SearchZone;

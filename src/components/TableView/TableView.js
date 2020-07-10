@@ -6,16 +6,16 @@ const TableView = (props) => {
     const [logData] = useState(props.logData);
     const [selectedLogData, setSelectedLogData] = useState(null);
 
-    const renderHeader = () => {
-        return (
-            <div>
-                <img src="../../nuslv.jpg" alt="Simulation Log Viewer" className="App-logo" width="50" height="50" />
-                <h2>Simulation Log Viewer</h2>
-            </div>
-        );
-    };
+    // const renderHeader = () => {
+    //     return (
+    //         <div>
+    //             <img src="../../nuslv.jpg" alt="Simulation Log Viewer" className="App-logo" width="50" height="50" />
+    //             <h2>Simulation Log Viewer</h2>
+    //         </div>
+    //     );
+    // };
 
-    const header = renderHeader();
+    //const header = renderHeader();
   
     const millisToMinAndSec = (millis) => {
       var minutes = Math.floor(millis / 60000);
@@ -91,7 +91,7 @@ const TableView = (props) => {
     return (
         <DataTable 
             value={logData}                     
-            header={header} 
+            // header={header} 
             responsive 
             className="p-datatable-customers" 
             dataKey="simulationRuns.scenarioId" 
