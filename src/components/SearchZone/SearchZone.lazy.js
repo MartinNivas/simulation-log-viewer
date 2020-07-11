@@ -1,12 +1,12 @@
 import React, { lazy, Suspense } from 'react';
 import {ProgressSpinner} from 'primereact/progressspinner';
 
-const LazyTableView = lazy(() => import('./TableView'));
+const LazySearchZone = lazy(() => import('./SearchZone'));
 
-const TableView = props => (
+const SearchZone = props => (
   <Suspense fallback={<ProgressSpinner />}>
-    <LazyTableView {...props} />
+    <LazySearchZone {...props} />
   </Suspense>
 );
 
-export default TableView;
+export default SearchZone;

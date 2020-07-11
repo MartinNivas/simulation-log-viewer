@@ -23,3 +23,7 @@ td, th {
 body .p-progressbar .p-progressbar-value {
   background: #FF0000 !important;
 }
+
+body .p-datatable .p-datatable-thead > tr > th {
+  background-color: #e0ffff;
+}
