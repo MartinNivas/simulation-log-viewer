@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component should match snapshot 1`] = `
+<div
+  className="p-datatable-header"
+>
+  <img
+    alt="Simulation Log Viewer"
+    className="nu-applogo"
+    src="nuslv.jpg"
+  />
+  <h2>
+    Simulation Log Viewer
+  </h2>
+</div>
+`;
