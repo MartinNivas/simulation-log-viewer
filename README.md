@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup Project in Local Environment
+
+    1. Install nodejs version > 10 (https://nodejs.org/en/download/)
+    2. Install visual studio code editor (preferred) or any editor of your choice (https://code.visualstudio.com/Download)
+    3. Install git for version control (https://git-scm.com/downloads)
+    4. Clone the project (https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+    5. Install commitizen (https://www.npmjs.com/package/commitizen)
+    6. Inside the cloned project folder -> Install all the project dependecies by using command `npm install`
+    7. To start the project use `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -31,8 +41,8 @@ The build is minified and the filenames include the hashes.<br />
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Project Layout
 
+## Project Layout
 
 * `public` - To load the mock datas , favicon, images etc for the project
 
