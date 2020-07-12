@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup Project in Local Environment
+
+    1. Install nodejs version > 10 (https://nodejs.org/en/download/)
+    2. Install visual studio code editor (preferred) or any editor of your choice (https://code.visualstudio.com/Download)
+    3. Install git for version control (https://git-scm.com/downloads)
+    4. Clone the project (https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+    5. Install commitizen (https://www.npmjs.com/package/commitizen)
+    6. Inside the cloned project folder -> Install all the project dependecies by using command `npm install`
+    7. To start the project use `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -12,6 +22,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+### `npm run commmit`
+
+Instead of usual `git commit` command commitzen is used to standarize the commit changelog
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
@@ -23,46 +38,73 @@ Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Layout
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* `public` - To load the mock datas , favicon, images etc for the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  * `data` - Mock data json files
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* `src` - Actual project code reside inside this folder
 
-## Learn More
+  * `assets` - images, video, audio etc will be inside this folder
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    * `images` - contains application jpg, gif, png files
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  * `components` - Contain Application(s) single / shared components
 
-### Code Splitting
+    * `Header` - Header section of the application for all pages
+ 
+    * `ListGridView` - The result component UI for search page
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+    * `SearchZone` - The search page component which has autocomplete fields and import ListGridView Component 
 
-### Analyzing the Bundle Size
+    * `Simulator` - The Simultor container imports this component which comprises of tableview page and search page
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+    * `TableView` - The result component UI for table page
 
-### Making a Progressive Web App
+    * `Tabs` - Implement the state tabs for the application
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+  * `configs` - Contain application config files mostly to interact with backend API
+    
+    * `appconfig.js` - main file which will render the config file based on the environment
 
-### Advanced Configuration
+    * `appconfig-local.js` - Local environment config file which has endpoints, baseurl etc
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+    * `appconfig-sit.js` - Sit environment config file which has endpoints, baseurl etc
 
-### Deployment
+    * `appconfig-qa.js` - QA environment config file which has endpoints, baseurl etc
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+    * `appconfig-prod.js` - Prod environment config file which has endpoints, baseurl etc
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  * `containers` - Comprises of containers which take care of the business logic of the application
+
+    * `SimulatorContainer` - Communicates with the application service to load the data for application
+
+  * `data` - Contains constant(s) files for the application
+
+    * `constants` - Static text are stated inside this file which can be applied for application
+
+  * `services` - Contain all the services necessary for the Frontend to communicate with backend 
+
+    * `SimulatorService` - Loads the file mock data which is stored outside of the project
+
+  * `utils` - Contain all the common functions which can be used across the application
+
+    * `Utils.js`
+
+## Notes
+
+  1. `primereact` npm module is used for theming the application
+  2. `Commitzen` npm module is used for standarizing commit conventions
+  3. Most of the components in the application are Lazy loaded
+  4. Loading Spinner implemented to indicate the user/customer that the page is loading till the components are completed loaded
+  5. Introduced React Hooks concept for components to maintain its state
+  6. The whole application is designed on the concept of containermodule
+  7. Additional scripts have been introduced to build the application in ease for different environments (package.json)
+
+
