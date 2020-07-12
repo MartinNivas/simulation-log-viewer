@@ -5,12 +5,12 @@ import 'primeflex/primeflex.css';
 
 import React from 'react';
 import './App.css';
-import Simulator from './components/Simulator/Simulator.lazy';
+import SimulatorContainer from './containers/SimulatorContainer';
 
 function App() {
   return (
     <div className="App">
-      <Simulator />
+      <SimulatorContainer />
     </div>
   );
 }

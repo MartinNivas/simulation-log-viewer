@@ -1,0 +1,61 @@
+.center-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-col-d {
+    display: table-cell;
+}
+.p-col-m {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .p-col-d {
+        display: none;
+    }
+    .p-col-m {
+        display: inline-block;
+    }
+}
+
+.dataview-demo .car-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    border-bottom: 1px solid #d9dad9;
+}
+.dataview-demo .car-details > div {
+    display: flex;
+    align-items: center;
+}
+.dataview-demo .car-details > div img {
+    margin-right: 14px;
+}
+.dataview-demo .car-detail {
+    padding: 0 1em 1em 1em;
+    border-bottom: 1px solid #d9dad9;
+    margin: 1em;
+}
+.dataview-demo .p-panel-content {
+    padding: 1em;
+}
+@media screen and (max-width: 1024px) {
+    .dataview-demo .p-dataview .car-details img {
+        width: 75px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .dataview-demo .car-details, .dataview-demo .search-icon {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .dataview-demo .filter-container {
+        text-align: left;
+    }
+
+    .datascroll-demo .car-item {
+        text-align: center;
+    }
+}
