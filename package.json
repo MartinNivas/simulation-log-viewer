@@ -8,23 +8,24 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "primeflex": "^2.0.0-rc.1",
     "primeicons": "^4.0.0",
     "primereact": "^4.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-test-renderer": "^16.13.1",
     "react-transition-group": "^4.4.1"
   },
   "scripts": {
     "start": "REACT_APP_STAGE=local react-scripts start",
     "commit": "npx git-cz",
-    
     "build:local": "REACT_APP_STAGE=local react-scripts build",
     "build:sit": "REACT_APP_STAGE=sit react-scripts build",
     "build:qa": "REACT_APP_STAGE=qa react-scripts build",
     "build:prod": "REACT_APP_STAGE=prod react-scripts build",
-
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,11 +45,20 @@
     ]
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^3.2.0"
+    "cz-conventional-changelog": "^3.2.0",
+    "enzyme-to-json": "^3.5.0"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ]
+  },
+  "snapshotSerializers": [
+    "enzyme-to-json/seralizer"
+  ]
 }
