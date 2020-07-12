@@ -1,3 +1,5 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Setup Project in Local Environment
@@ -9,6 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     5. Install commitizen (https://www.npmjs.com/package/commitizen)
     6. Inside the cloned project folder -> Install all the project dependecies by using command `npm install`
     7. To start the project use `npm start`
+    8. Checkout the branch dev_stable to make incremental development and PR can be raised to merge to master branch
 
 ## Available Scripts
 
@@ -25,21 +28,16 @@ You will also see any lint errors in the console.
 ### `npm run commmit`
 
 Instead of usual `git commit` command commitzen is used to standarize the commit changelog
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm run build:local` / `npm run build:sit` / `npm run build:qa` / `npm run build:prod` 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
+Builds the app based on the environment configuration file to the `build` folder.<br />
+It correctly bundles React in production mode for `build:prod` command and optimizes the build for the best performance.
 The build is minified and the filenames include the hashes.<br />
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
 ## Project Layout
@@ -106,5 +104,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   5. Introduced React Hooks concept for components to maintain its state
   6. The whole application is designed on the concept of containermodule
   7. Additional scripts have been introduced to build the application in ease for different environments (package.json)
+
 
 
