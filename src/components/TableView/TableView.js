@@ -28,12 +28,18 @@ const TableView = (props) => {
     return results;
   }
 
+  const showStartTime = (rowData) => {
+    return (
+      <p>{new Date(rowData.startTime).toString()}</p>
+    );
+  }
+
   const runningTime = (rowData) => {
     const sceData = getScenarios(rowData);
-    const startTime = new Date(rowData.startTime).getTime();
-    const endTime = new Date(rowData.endTime).getTime();
+    const startTime = new Date(rowData.startTime);
+    const endTime = new Date(rowData.endTime);
     utilizedTime = +endTime - +startTime;
-    let dataToDisplay = `${utils.millisToMinAndSec(utilizedTime)} / ${sceData[0].maxRunningTime}`; 
+    let dataToDisplay = `${utils.millisToMinAndSec(utilizedTime)} / ${utils.convertToMinTimeFormat(sceData[0].maxRunningTime)}`; 
     return (
       <p>{dataToDisplay}</p>
     );
@@ -86,12 +92,11 @@ const TableView = (props) => {
     let dataToDisplay = _CONSTANTS.BOOLEAN_VALUE.YES;
     let iconName = "pi pi-check-circle";
     let iconColor = { 'color': 'green' };
-
     if (rowData.result.hasCollision) {
       dataToDisplay = _CONSTANTS.BOOLEAN_VALUE.NO;
     } else if (rowData.result.numberOfStops > sceData[0].maxNumberOfStops) { 
       dataToDisplay = _CONSTANTS.BOOLEAN_VALUE.NO;
-    } else if (+utilizedTime > sceData[0].maxRunningTime) { 
+    } else if (utils.millisToMin(utilizedTime) > sceData[0].maxRunningTime) { 
       dataToDisplay = _CONSTANTS.BOOLEAN_VALUE.NO;
     } else {
       // else block added to remove SonarQube Lint issue 
@@ -145,7 +150,7 @@ const TableView = (props) => {
 
       <Column field="scenarioId" header={_CONSTANTS.TABLE.HEADER.ONE} sortable filter filterMatchMode="contains" filterPlaceholder={_CONSTANTS.TABLE.FILTER_PLACEHOLDER.SCENARIO} />
       <Column field="carBuild" header={_CONSTANTS.TABLE.HEADER.TWO} sortable filter filterMatchMode="contains" filterPlaceholder={_CONSTANTS.TABLE.FILTER_PLACEHOLDER.CARBUILD} />
-      <Column field="startTime" header={_CONSTANTS.TABLE.HEADER.THREE} sortable />
+      <Column field="startTime" header={_CONSTANTS.TABLE.HEADER.THREE} body={showStartTime} />
       <Column field="endTime" header={_CONSTANTS.TABLE.HEADER.FOUR} body={runningTime} />
       <Column field="result.numberOfStops" header={_CONSTANTS.TABLE.HEADER.FIVE} body={noOfStops} />
       <Column field="result.hasCollision" header={_CONSTANTS.TABLE.HEADER.SIX} body={collisionStatus} sortable />
