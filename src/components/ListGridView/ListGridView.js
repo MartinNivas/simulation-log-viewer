@@ -43,7 +43,7 @@ const ListGridView = (props) => {
 
         return (
             <div className="p-grid">
-                <div className="p-col-12" style={{textAlign: 'right'}}>
+                <div className="p-col-12" style={{ textAlign: 'right' }}>
                     <DataViewLayoutOptions layout={layout} onChange={(e) => setLayout(e.value)} />
                 </div>
             </div>
@@ -51,13 +51,13 @@ const ListGridView = (props) => {
     };
 
     const header = renderHeader();
-    
+
     return (
         <div className="dataview-demo">
             <DataView value={props.tableData} header={header} layout={layout} itemTemplate={itemTemplate}></DataView>
         </div>
     );
-    
+
 }
 
 export default ListGridView;

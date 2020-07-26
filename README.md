@@ -83,7 +83,7 @@ The build is minified and the filenames include the hashes.<br />
 
     * `SimulatorContainer` - Communicates with the application service to load the data for application
 
-  * `data` - Contains constant(s) files for the application
+  * `locales` - Contains constant(s) files for the application
 
     * `constants` - Static text are stated inside this file which can be applied for application
 
@@ -93,17 +93,19 @@ The build is minified and the filenames include the hashes.<br />
 
   * `utils` - Contain all the common functions which can be used across the application
 
-    * `Utils.js`
+    * `Utils.js` - Contain all the common functions which can be used across the application
 
 ## Notes
 
   1. `primereact` npm module is used for theming the application
   2. `Commitzen` npm module is used for standarizing commit conventions
-  3. Most of the components in the application are Lazy loaded
-  4. Loading Spinner implemented to indicate the user/customer that the page is loading till the components are completed loaded
-  5. Introduced React Hooks concept for components to maintain its state
-  6. The whole application is designed on the concept of containermodule
-  7. Additional scripts have been introduced to build the application in ease for different environments (package.json)
+  3. Most of the components in the application are `Lazy` loaded
+  4. `Loading Spinner` implemented to indicate the user/customer that the page is loading till the components are completed loaded
+  5. Introduced `React Hooks` concept for components to maintain its state
+  6. The whole application is designed on the concept of `containermodule`
+  7. Additional scripts have been introduced to `build the application in ease for different environments (package.json)`
+  8. `SonarLint` plugin in VSCode to identify code issues so the application will follow the best standard format
+  9. `Prettier - Code formatter` plugin in VSCode to format the code(s)
 
 
 

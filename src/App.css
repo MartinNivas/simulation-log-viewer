@@ -1,12 +1,11 @@
-
-
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -19,11 +18,15 @@ td, th {
 .nu-ac {
   margin: 20px;
 }
-  
+
 body .p-progressbar .p-progressbar-value {
-  background: #FF0000 !important;
+  background: 	#FFFF00 !important;
 }
 
-body .p-datatable .p-datatable-thead > tr > th {
+body .p-datatable .p-datatable-thead>tr>th {
   background-color: #e0ffff;
+}
+
+body .p-panel .p-panel-titlebar {
+  height: 4rem;
 }

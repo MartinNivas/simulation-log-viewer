@@ -8,5 +8,10 @@ export class SimulatorService {
                 .then(res => res.data.data);
     }
 
+    getSimulatorData() {
+        return axios.get('data/simulatorlog.json')
+                .then(res => res.data);
+    }
+
 }
     

@@ -8,7 +8,6 @@ export default class Utils {
     }
 
     calculatePercentage(val, total) {
-        return Math.floor(100 - ((val/total) * 100));
+        return Math.floor(100 - ((val / total) * 100));
     }
 }
-    
