@@ -111,11 +111,11 @@ const SearchZone = (props) => {
             c++;
           }
 
-          let startTime = new Date(item.startTime).getTime();
-          let endTime = new Date(item.endTime).getTime();
+          let startTime = new Date(item.startTime);
+          let endTime = new Date(item.endTime);
           let utilizedTime = +endTime - +startTime;
 
-          if (utils.millisToMinAndSec(+utilizedTime) > sceData[0].maxRunningTime) {
+          if (utils.millisToMin(+utilizedTime) > sceData[0].maxRunningTime) {
             t++;
           }
 
@@ -123,7 +123,7 @@ const SearchZone = (props) => {
             p++;
           } else if (item.result.numberOfStops > sceData[0].maxNumberOfStops) {
             p++;
-          } else if (utils.millisToMinAndSec(+utilizedTime) > sceData[0].maxRunningTime) {
+          } else if (utils.millisToMin(+utilizedTime) > sceData[0].maxRunningTime) {
             p++;
           } else {
             // do something 
@@ -157,11 +157,11 @@ const SearchZone = (props) => {
         collision = _CONSTANTS.MIN_PERCENTAGE;
       }
 
-      const startTime = new Date(dataToCheck.startTime).getTime();
-      const endTime = new Date(dataToCheck.endTime).getTime();
+      const startTime = new Date(dataToCheck.startTime);
+      const endTime = new Date(dataToCheck.endTime);
       const utilizedTime = +endTime - +startTime;
 
-      if (utils.millisToMinAndSec(+utilizedTime) > sceData[0].maxRunningTime) {
+      if (utils.millisToMin(+utilizedTime) > sceData[0].maxRunningTime) {
         time = _CONSTANTS.MAX_PERCENTAGE;
       } else {
         time = _CONSTANTS.MIN_PERCENTAGE;
@@ -171,7 +171,7 @@ const SearchZone = (props) => {
         pass = _CONSTANTS.MAX_PERCENTAGE;
       } else if (dataToCheck.result.numberOfStops > sceData[0].maxNumberOfStops) {
         pass = _CONSTANTS.MAX_PERCENTAGE;
-      } else if (+utilizedTime > sceData[0].maxRunningTime) {
+      } else if (utils.millisToMin(+utilizedTime) > sceData[0].maxRunningTime) {
         pass = _CONSTANTS.MAX_PERCENTAGE;
       } else {
         pass = _CONSTANTS.MIN_PERCENTAGE;

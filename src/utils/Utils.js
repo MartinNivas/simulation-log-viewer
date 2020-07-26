@@ -10,4 +10,20 @@ export default class Utils {
     calculatePercentage(val, total) {
         return Math.floor(100 - ((val / total) * 100));
     }
+
+    convertToMinTimeFormat(val) {
+        let str;
+        if(val.length === 1) {
+            str = '0' + val;
+            console.log(str);
+        } else {
+            str = val;
+        }
+        return str + ":" + 0 + 0;
+    }
+
+    millisToMin(millis) {
+        var minutes = Math.floor(millis / 60000);
+        return minutes;
+    }
 }

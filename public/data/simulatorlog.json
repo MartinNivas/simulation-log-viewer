@@ -1,8 +1,8 @@
 {
     "simulationRuns": [
         {
-            "startTime": "2020-07-05T04:28:14Z",
-            "endTime": "2020-07-05T04:48:14Z",
+            "startTime": 1595752094000,
+            "endTime": 1595753294000,
             "scenarioId": "S0001",
             "carBuild": "CB0001",
             "result": {
@@ -11,8 +11,8 @@
             }
         },
         {
-            "startTime": "2020-07-05T05:28:14Z",
-            "endTime": "2020-07-05T05:38:14Z",
+            "startTime": 1595755694000,
+            "endTime": 1595756294000,
             "scenarioId": "S0002",
             "carBuild": "CB0002",
             "result": {
@@ -21,8 +21,8 @@
             }
         },
         {
-            "startTime": "2020-07-05T04:08:14Z",
-            "endTime": "2020-07-05T04:28:14Z",
+            "startTime": 1595750894000,
+            "endTime": 1595752094000,
             "scenarioId": "S0003",
             "carBuild": "CB0001",
             "result": {
@@ -31,8 +31,8 @@
             }
         },
         {
-            "startTime": "2020-07-05T04:00:14Z",
-            "endTime": "2020-07-05T04:30:14Z",
+            "startTime": 1595620814000,
+            "endTime": 1595622614000,
             "scenarioId": "S0004",
             "carBuild": "CB0002",
             "result": {
@@ -41,8 +41,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595546054000,
+            "endTime": 1595547254000,
             "scenarioId": "S0005",
             "carBuild": "CB0004",
             "result": {
@@ -51,8 +51,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:55:14Z",
+            "startTime": 1595491814000,
+            "endTime": 1595494514000,
             "scenarioId": "S0006",
             "carBuild": "CB0003",
             "result": {
@@ -61,8 +61,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595491814000,
+            "endTime": 1595492414000,
             "scenarioId": "S0007",
             "carBuild": "CB0005",
             "result": {
@@ -71,8 +71,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595481014000,
+            "endTime": 1595481914000,
             "scenarioId": "S0008",
             "carBuild": "CB0005",
             "result": {
@@ -81,8 +81,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595654714000,
+            "endTime": 1595655974000,
             "scenarioId": "S0009",
             "carBuild": "CB0005",
             "result": {
@@ -91,8 +91,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595771174000,
+            "endTime": 1595771714000,
             "scenarioId": "S0010",
             "carBuild": "CB0006",
             "result": {
@@ -101,8 +101,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595720414000,
+            "endTime": 1595721194000,
             "scenarioId": "S0011",
             "carBuild": "CB0006",
             "result": {
@@ -111,8 +111,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595725994000,
+            "endTime": 1595727194000,
             "scenarioId": "S0012",
             "carBuild": "CB0007",
             "result": {
@@ -121,8 +121,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595381594000,
+            "endTime": 1595382794000,
             "scenarioId": "S0013",
             "carBuild": "CB0007",
             "result": {
@@ -131,8 +131,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595791994000,
+            "endTime": 1595792594000,
             "scenarioId": "S0014",
             "carBuild": "CB0008",
             "result": {
@@ -141,8 +141,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595706194000,
+            "endTime": 1595706794000,
             "scenarioId": "S0015",
             "carBuild": "CB0009",
             "result": {
@@ -151,8 +151,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595728994000,
+            "endTime": 1595730794000,
             "scenarioId": "S0016",
             "carBuild": "CB0009",
             "result": {
@@ -161,8 +161,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T04:10:14Z",
-            "endTime": "2020-07-06T04:20:14Z",
+            "startTime": 1595718194000,
+            "endTime": 1595718794000,
             "scenarioId": "S0017",
             "carBuild": "CB0008",
             "result": {
@@ -171,8 +171,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T03:20:14Z",
-            "endTime": "2020-07-06T03:40:14Z",
+            "startTime": 1595733434000,
+            "endTime": 1595734634000,
             "scenarioId": "S0018",
             "carBuild": "CB0010",
             "result": {
@@ -181,8 +181,8 @@
             }
         },
         {
-            "startTime": "2020-07-06T03:10:14Z",
-            "endTime": "2020-07-06T03:20:14Z",
+            "startTime": 1595610434000,
+            "endTime": 1595611034000,
             "scenarioId": "S0019",
             "carBuild": "CB0010",
             "result": {
@@ -195,97 +195,97 @@
         {
             "scenarioId": "S0001",
             "maxNumberOfStops": 10,
-            "maxRunningTime": "20:00"
+            "maxRunningTime": 20
         },
         {
             "scenarioId": "S0002",
             "maxNumberOfStops": 3,
-            "maxRunningTime": "05:00"
+            "maxRunningTime": 5
         },
         {
             "scenarioId": "S0003",
             "maxNumberOfStops": 10,
-            "maxRunningTime": "05:00"
+            "maxRunningTime": 5
         },
         {
             "scenarioId": "S0004",
             "maxNumberOfStops": 3,
-            "maxRunningTime": "05:00"
+            "maxRunningTime": 10
         },
         {
             "scenarioId": "S0005",
             "maxNumberOfStops": 2,
-            "maxRunningTime": "02:00"
+            "maxRunningTime": 2
         },
         {
             "scenarioId": "S0006",
             "maxNumberOfStops": 7,
-            "maxRunningTime": "07:00"
+            "maxRunningTime": 7
         },
         {
             "scenarioId": "S0007",
             "maxNumberOfStops": 8,
-            "maxRunningTime": "10:00"
+            "maxRunningTime": 10
         },
         {
             "scenarioId": "S0008",
             "maxNumberOfStops": 10,
-            "maxRunningTime": "11:00"
+            "maxRunningTime": 11
         },
         {
             "scenarioId": "S0009",
             "maxNumberOfStops": 14,
-            "maxRunningTime": "14:00"
+            "maxRunningTime": 14
         },
         {
             "scenarioId": "S0010",
             "maxNumberOfStops": 1,
-            "maxRunningTime": "01:00"
+            "maxRunningTime": 1
         },
         {
             "scenarioId": "S0011",
             "maxNumberOfStops": 7,
-            "maxRunningTime": "07:00"
+            "maxRunningTime": 7
         },
         {
             "scenarioId": "S0012",
             "maxNumberOfStops": 9,
-            "maxRunningTime": "09:00"
+            "maxRunningTime": 9
         },
         {
             "scenarioId": "S0013",
             "maxNumberOfStops": 3,
-            "maxRunningTime": "03:00"
+            "maxRunningTime": 3
         },
         {
             "scenarioId": "S0014",
             "maxNumberOfStops": 4,
-            "maxRunningTime": "04:00"
+            "maxRunningTime": 4
         },
         {
             "scenarioId": "S0015",
             "maxNumberOfStops": 6,
-            "maxRunningTime": "06:00"
+            "maxRunningTime": 6
         },
         {
             "scenarioId": "S0016",
             "maxNumberOfStops": 8,
-            "maxRunningTime": "08:00"
+            "maxRunningTime": 8
         },
         {
             "scenarioId": "S0017",
             "maxNumberOfStops": 5,
-            "maxRunningTime": "05:00"
+            "maxRunningTime": 5
         },
         {
             "scenarioId": "S0018",
             "maxNumberOfStops": 9,
-            "maxRunningTime": "09:00"
+            "maxRunningTime": 9
         },
         {
             "scenarioId": "S0019",
             "maxNumberOfStops": 6,
-            "maxRunningTime": "06:00"
+            "maxRunningTime": 6
         }
     ]
 }
