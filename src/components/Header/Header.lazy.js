@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import {ProgressSpinner} from 'primereact/progressspinner';
+import { ProgressSpinner } from 'primereact/progressspinner';
 
 const LazyHeader = lazy(() => import('./Header'));
 

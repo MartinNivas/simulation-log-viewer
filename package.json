@@ -20,8 +20,9 @@
     "react-transition-group": "^4.4.1"
   },
   "scripts": {
-    "start": "REACT_APP_STAGE=local react-scripts start",
+    "start": "react-scripts start",
     "commit": "npx git-cz",
+    "build": "react-scripts build",
     "build:local": "REACT_APP_STAGE=local react-scripts build",
     "build:sit": "REACT_APP_STAGE=sit react-scripts build",
     "build:qa": "REACT_APP_STAGE=qa react-scripts build",
