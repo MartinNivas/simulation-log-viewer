@@ -1,111 +1,116 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Application
 
-## Setup Project in Local Environment
+This project was bootstrapped using [Create React App](https://github.com/facebook/create-react-app).
 
-    1. Install nodejs version > 10 (https://nodejs.org/en/download/)
-    2. Install visual studio code editor (preferred) or any editor of your choice (https://code.visualstudio.com/Download)
-    3. Install git for version control (https://git-scm.com/downloads)
-    4. Clone the project (https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
-    5. Install commitizen (https://www.npmjs.com/package/commitizen)
-    6. Inside the cloned project folder -> Install all the project dependecies by using command `npm install`
-    7. To start the project use `npm start`
-    8. Checkout the branch dev_stable to make incremental development and PR can be raised to merge to master branch
+---
 
-## Available Scripts
+## ðŸš€ Getting Started
 
-In the project directory, you can run:
+Follow these steps to set up the project on your local machine:
+
+1. **Install Node.js** (version > 10): [Download Node.js](https://nodejs.org/en/download/)
+2. **Install a Code Editor**: [Visual Studio Code (recommended)](https://code.visualstudio.com/Download)
+3. **Install Git**: [Download Git](https://git-scm.com/downloads)
+4. **Clone the Repository**: Follow [this guide](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet) if needed.
+5. **Install Commitizen** (for standardized commit messages): `npm install -g commitizen`  
+   [Learn more](https://www.npmjs.com/package/commitizen)
+6. **Install Project Dependencies**:  
+   Navigate into the cloned project folder and run:  
+   ```bash
+   npm install
+   ```
+7. **Start the Development Server**:  
+   ```bash
+   npm start
+   ```
+8. **Development Branch**:  
+   Work on the `dev_stable` branch. Raise pull requests to merge changes into the `master` branch.
+
+---
+
+## ðŸ“œ Available Scripts
+
+Within the project directory, you can run the following commands:
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in development mode.  
+Open [http://localhost:3000](http://localhost:3000) in your browser.  
+Hot-reloading is enabled and linting errors will appear in the console.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### `npm run commit`
 
-### `npm run commmit`
-
-Instead of usual `git commit` command commitzen is used to standarize the commit changelog
+Replaces the traditional `git commit` with Commitizen for standardized commit messages.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
+Launches the test runner in interactive watch mode.
 
-### `npm run build:local` / `npm run build:sit` / `npm run build:qa` / `npm run build:prod` 
+### Environment-specific builds
 
-Builds the app based on the environment configuration file to the `build` folder.<br />
-It correctly bundles React in production mode for `build:prod` command and optimizes the build for the best performance.
-The build is minified and the filenames include the hashes.<br />
+Use the following scripts to generate builds for different environments:
 
+- `npm run build:local`
+- `npm run build:sit`
+- `npm run build:qa`
+- `npm run build:prod`
 
-## Project Layout
+Each script uses a corresponding environment config file.  
+The `build:prod` command generates a production-ready bundle optimized for performance (minified files with hashes).
 
-* `public` - To load the mock datas , favicon, images etc for the project
+---
 
-  * `data` - Mock data json files
+## ðŸ“ Project Structure
 
-* `src` - Actual project code reside inside this folder
+```
+â”œâ”€â”€ public/                 # Static files (favicon, images, mock data)
+â”‚   â””â”€â”€ data/               # JSON mock data files
+â”‚
+â”œâ”€â”€ src/                    # Main source code
+â”‚   â”œâ”€â”€ assets/             # Media assets (images, videos, audio)
+â”‚   â”‚   â””â”€â”€ images/         # Image files (JPG, PNG, GIF, etc.)
+â”‚   â”‚
+â”‚   â”œâ”€â”€ components/         # Reusable UI components
+â”‚   â”‚   â”œâ”€â”€ Header/         
+â”‚   â”‚   â”œâ”€â”€ ListGridView/   
+â”‚   â”‚   â”œâ”€â”€ SearchZone/     
+â”‚   â”‚   â”œâ”€â”€ Simulator/      
+â”‚   â”‚   â”œâ”€â”€ TableView/      
+â”‚   â”‚   â””â”€â”€ Tabs/           
+â”‚   â”‚
+â”‚   â”œâ”€â”€ configs/            # Environment-based configuration files
+â”‚   â”‚   â”œâ”€â”€ appconfig.js           
+â”‚   â”‚   â”œâ”€â”€ appconfig-local.js     
+â”‚   â”‚   â”œâ”€â”€ appconfig-sit.js       
+â”‚   â”‚   â”œâ”€â”€ appconfig-qa.js        
+â”‚   â”‚   â””â”€â”€ appconfig-prod.js      
+â”‚   â”‚
+â”‚   â”œâ”€â”€ containers/         # Smart components handling business logic
+â”‚   â”‚   â””â”€â”€ SimulatorContainer/    
+â”‚   â”‚
+â”‚   â”œâ”€â”€ locales/            # Application constants and static texts
+â”‚   â”‚   â””â”€â”€ constants/      
+â”‚   â”‚
+â”‚   â”œâ”€â”€ services/           # API interaction and data handling
+â”‚   â”‚   â””â”€â”€ SimulatorService.js    
+â”‚   â”‚
+â”‚   â””â”€â”€ utils/              # Shared utility functions
+â”‚       â””â”€â”€ Utils.js        
+```
 
-  * `assets` - images, video, audio etc will be inside this folder
+---
 
-    * `images` - contains application jpg, gif, png files
+## ðŸ“ Notes
 
-  * `components` - Contain Application(s) single / shared components
-
-    * `Header` - Header section of the application for all pages
- 
-    * `ListGridView` - The result component UI for search page
-
-    * `SearchZone` - The search page component which has autocomplete fields and import ListGridView Component 
-
-    * `Simulator` - The Simultor container imports this component which comprises of tableview page and search page
-
-    * `TableView` - The result component UI for table page
-
-    * `Tabs` - Implement the state tabs for the application
-
-  * `configs` - Contain application config files mostly to interact with backend API
-    
-    * `appconfig.js` - main file which will render the config file based on the environment
-
-    * `appconfig-local.js` - Local environment config file which has endpoints, baseurl etc
-
-    * `appconfig-sit.js` - Sit environment config file which has endpoints, baseurl etc
-
-    * `appconfig-qa.js` - QA environment config file which has endpoints, baseurl etc
-
-    * `appconfig-prod.js` - Prod environment config file which has endpoints, baseurl etc
-
-
-  * `containers` - Comprises of containers which take care of the business logic of the application
-
-    * `SimulatorContainer` - Communicates with the application service to load the data for application
-
-  * `locales` - Contains constant(s) files for the application
-
-    * `constants` - Static text are stated inside this file which can be applied for application
-
-  * `services` - Contain all the services necessary for the Frontend to communicate with backend 
-
-    * `SimulatorService` - Loads the file mock data which is stored outside of the project
-
-  * `utils` - Contain all the common functions which can be used across the application
-
-    * `Utils.js` - Contain all the common functions which can be used across the application
-
-## Notes
-
-  1. `primereact` npm module is used for theming the application
-  2. `Commitzen` npm module is used for standarizing commit conventions
-  3. Most of the components in the application are `Lazy` loaded
-  4. `Loading Spinner` implemented to indicate the user/customer that the page is loading till the components are completed loaded
-  5. Introduced `React Hooks` concept for components to maintain its state
-  6. The whole application is designed on the concept of `containermodule`
-  7. Additional scripts have been introduced to `build the application in ease for different environments (package.json)`
-  8. `SonarLint` plugin in VSCode to identify code issues so the application will follow the best standard format
-  9. `Prettier - Code formatter` plugin in VSCode to format the code(s)
-
-
-
+- **UI Framework**: `primereact` is used for theming and UI components.
+- **Commit Standards**: `Commitizen` ensures consistent commit messages.
+- **Lazy Loading**: Components are loaded lazily to improve performance.
+- **Loading Spinner**: Displayed while components are loading to improve UX.
+- **React Hooks**: Used throughout to manage component state.
+- **Architecture**: The app follows a `container-module` pattern.
+- **Environment Builds**: Custom scripts available to build for different environments.
+- **Code Quality**:
+  - Use the **SonarLint** VS Code plugin to catch issues during development.
+  - Use **Prettier** for automatic code formatting.
